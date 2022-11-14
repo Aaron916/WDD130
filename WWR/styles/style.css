@@ -226,6 +226,37 @@ h4 {
     grid-row: 2/3;
 }
 
+.river-list {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.river-item {
+    max-width: 750px;
+    border: 1px black solid;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+.river-content {
+    display:grid;
+    grid-template-columns: 3fr 1fr;
+    grid-column-gap: 10px;
+    align-items: center;
+}
+
+.river-content p {
+    grid-column: 1/2;
+}
+
+.river-content img {
+    max-width: 150px;
+    border-radius: 100%;
+    grid-column: 2/3;
+}
+
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;
