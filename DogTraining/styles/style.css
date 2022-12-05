@@ -72,7 +72,7 @@ a:hover {
     font-family: var(--heading-font);
 }
 
-.main-content-box {
+.main-content-box, .training-content-box {
     width:75%;
     display: grid;
     grid-template-columns: 75% 25%;
@@ -81,13 +81,13 @@ a:hover {
     padding: 10px
 }
 
-.main-content-box p {
+.main-content-box p, .training-content-box p, ul {
     grid-column: 1/2;
     width: 100%;
     font-family: var(--paragraph-font);
 }
 
-.main-content-box img {
+.main-content-box img, .training-content-box img {
     grid-column: 2/3;
     width: 100%;
     margin: auto 0;

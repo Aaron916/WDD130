@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <link rel="stylesheet" href="styles/style.css">
+
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,8 +10,9 @@
     </head>
     <body>
         <nav>
-            <div class="nav-item" id="site-logo"><a href="index.html"><img
-                        src="images/Logo.jpg" alt="Logo" class="logo"></a></div>
+            <div class="nav-item" id="site-logo">
+                <a href="index.html"><img src="images/Logo.jpg" alt="Logo" class="logo"></a>
+            </div>
             <a href="training.html" class="nav-item">Training Tips</a>
             <a href="contact.html" class="nav-item">Contact Us</a>
         </nav>
@@ -22,7 +24,7 @@
         <main>
             <div class="training-content-box">
                 <div class="training-text">
-                    <h5>Sit</h5>
+                    <h2>Sit</h2>
                     <p>
                         Teaching a dog to sit can be easy for some dogs, and
                         difficult for others.
@@ -59,7 +61,7 @@
             </div>
             <div class="training-content-box">
                 <div class="training-text">
-                    <h5>Stay</h5>
+                    <h2>Stay</h2>
                     <P>Just like with sit, this command will be easier for some
                         dogs than others. Patience is key!</P>
                     <ul>
@@ -83,6 +85,23 @@
                 <img src="images/pug-dog-isolated-white-background.jpg" alt="a
                     pug staying.">
             </div>
+            <script>
+                var acc = document.getElementsByClassName("accordion");
+                var i;
+                
+                for (i = 0; i < acc.length; i++) {
+                  acc[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                
+                    var panel = this.nextElementSibling;
+                    if (panel.style.display === "block") {
+                      panel.style.display = "none";
+                    } else {
+                      panel.style.display = "block";
+                    }
+                  });
+                }
+            </script>
         </main>
         <footer>
             <p>&copy; 2022 Aaron Rooks</p>
